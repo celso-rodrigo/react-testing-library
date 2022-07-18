@@ -3,7 +3,7 @@ import { screen } from '@testing-library/react';
 import renderWithRouter from '../helpers/renderWithRouter';
 import About from '../pages/About';
 
-describe('Tests of component About (Requisito 2)', () => {
+describe('Tests of "About" component (Requisito 2)', () => {
   it('Should exist two paragraphs with the pokedex info.', () => {
     renderWithRouter(<About />);
 

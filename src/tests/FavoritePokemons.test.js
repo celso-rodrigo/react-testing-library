@@ -5,7 +5,7 @@ import renderWithRouter from '../helpers/renderWithRouter';
 import FavoritePokemons from '../pages/FavoritePokemons';
 import App from '../App';
 
-describe('Tests of component FavoritePokemons (Requisito 3)', () => {
+describe('Tests of "FavoritePokemons" component (Requisito 3)', () => {
   it('Should display the corrent text when there is no favorited pokemon.', () => {
     renderWithRouter(<FavoritePokemons />);
 
