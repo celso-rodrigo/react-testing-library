@@ -22,12 +22,12 @@ describe('Tests of "notFound" component (Requisito 4)', () => {
     const { history } = renderWithRouter(<App />);
     history.push('/invalid-url');
 
-    const altTxt = 'Pikachu crying because the page requested was not found';
-    const src = 'https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif';
-    const img = screen.getByAltText(altTxt);
+    const expectedAlt = 'Pikachu crying because the page requested was not found';
+    const expectedSrc = 'https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif';
+    const img = screen.getByAltText(expectedAlt);
 
     expect(img).toBeDefined();
-    expect(img.src).toBe(src);
-    expect(img.getAttribute('alt')).toBe(altTxt);
+    expect(img).toHaveAttribute('src', expectedSrc);
+    expect(img).toHaveAttribute('alt', expectedAlt);
   });
 });

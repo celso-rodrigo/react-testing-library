@@ -30,14 +30,14 @@ describe('Tests of "PokemonDetails" component (Requisito 7)', () => {
     history.push('pokemons/25'); // Pikachu
 
     const imgOne = screen.getAllByAltText('Pikachu location')[0];
-    const imgOneSrc = 'https://cdn2.bulbagarden.net/upload/0/08/Kanto_Route_2_Map.png';
+    const imgOneExpectedSrc = 'https://cdn2.bulbagarden.net/upload/0/08/Kanto_Route_2_Map.png';
     const imgTwo = screen.getAllByAltText('Pikachu location')[1];
-    const imgTwoSrc = 'https://cdn2.bulbagarden.net/upload/b/bd/Kanto_Celadon_City_Map.png';
+    const imgTwoExpectedSrc = 'https://cdn2.bulbagarden.net/upload/b/bd/Kanto_Celadon_City_Map.png';
 
     expect(imgOne).toBeDefined();
-    expect(imgOne.src).toBe(imgOneSrc);
+    expect(imgOne).toHaveProperty('src', imgOneExpectedSrc);
     expect(imgTwo).toBeDefined();
-    expect(imgTwo.src).toBe(imgTwoSrc);
+    expect(imgTwo).toHaveProperty('src', imgTwoExpectedSrc);
   });
 
   it('Should be possible to favorite the pokemon.', () => {
@@ -53,6 +53,6 @@ describe('Tests of "PokemonDetails" component (Requisito 7)', () => {
     const expectedSrc = 'http://localhost/star-icon.svg';
 
     expect(favIcon).toBeDefined();
-    expect(favIcon.src).toBe(expectedSrc);
+    expect(favIcon).toHaveProperty('src', expectedSrc);
   });
 });

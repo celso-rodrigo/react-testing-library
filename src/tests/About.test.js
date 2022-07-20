@@ -35,7 +35,7 @@ describe('Tests of "About" component (Requisito 2)', () => {
     const img = screen.getByAltText(/Pokédex/i);
 
     expect(img).toBeDefined();
-    expect(img.src).toBe(expectedSrc);
-    expect(img.getAttribute('alt')).toBe('Pokédex');
+    expect(img).toHaveProperty('src', expectedSrc);
+    expect(img).toHaveProperty('alt', 'Pokédex');
   });
 });
