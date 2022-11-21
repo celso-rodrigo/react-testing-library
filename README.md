@@ -3,12 +3,12 @@
 
 <br/>
 
-<h2>O que foi desenvolvido</h2>
+<h2>O quê foi desenvolvido</h2>
 <p>Foram escritos os testes para uma aplicação React que já estava criada e configurada, utilizando Jest e a biblioteca React Testing Library.</p>
 
 <br/>
   
-<h2>O que foi avaliado</h2>
+<h2>O quê foi avaliado</h2>
 <ul>
   <li>Aderência do código às especificações</li>
   <li>Organização dos testes.</li>
